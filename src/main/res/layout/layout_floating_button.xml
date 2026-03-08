@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/floatingButtonContainer"
+    android:layout_width="wrap_content"
+    android:clickable="true"
+    android:layout_height="wrap_content">
+
+    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+    <!--        android:id="@+id/mainFloatingButton"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:clickable="true"-->
+    <!--        android:focusable="true"-->
+    <!--        app:backgroundTint="#ffffff"-->
+    <!--        android:alpha="0.8"-->
+    <!--        android:src="@drawable/ic_next" />-->
+
+    <ImageButton
+        android:id="@+id/mainFloatingButton"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingEnd="30dp"
+        android:scaleType="centerCrop"
+        android:background="#00000000"
+        android:src="@drawable/ic_right"
+        />
+
+    <LinearLayout
+        android:id="@+id/subButtonsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/closeButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:backgroundTint="#ffffff"
+            android:alpha="0.7"
+            app:fabCustomSize="40dp"
+            app:maxImageSize="20dp"
+            android:src="@drawable/ic_menu_close_clear_cancel" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/subButton1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:backgroundTint="#ffffff"
+            android:layout_marginStart="8dp"
+            android:alpha="0.7"
+            app:fabCustomSize="40dp"
+            app:maxImageSize="20dp"
+            android:src="@drawable/ic_arrow_back" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/subButton2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:backgroundTint="#ffffff"
+            android:layout_marginStart="8dp"
+            android:alpha="0.7"
+            app:fabCustomSize="40dp"
+            app:maxImageSize="20dp"
+            android:src="@android:drawable/ic_popup_sync" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/subButton3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:backgroundTint="#ffffff"
+            android:layout_marginStart="8dp"
+            android:alpha="0.7"
+            app:fabCustomSize="40dp"
+            app:maxImageSize="20dp"
+            android:src="@drawable/ic_home" />
+    </LinearLayout>
+
+</FrameLayout>

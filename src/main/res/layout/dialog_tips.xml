@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_bg"
+    android:layout_gravity="center"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    >
+
+    <!-- 标题 -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tips"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingBottom="16dp"/>
+
+    <!-- 内容部分 -->
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="16sp"
+        tool:text="This is a sample dialog content. You can customize it as needed."
+        android:lineSpacingExtra="4dp"
+        android:paddingBottom="24dp"/>
+
+    <!-- 按钮区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <TextView
+            android:id="@+id/btnNo"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="10dp"
+            android:gravity="center"
+            android:text="NO"
+            android:textAllCaps="true"
+            android:textColor="#44FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/dialog_bg"/>
+
+
+        <TextView
+            android:id="@+id/btnOk"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="20dp"
+            android:gravity="center"
+            android:text="OK"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/dialog_bg"/>
+    </LinearLayout>
+</LinearLayout>
